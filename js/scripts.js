@@ -1,7 +1,6 @@
 // JavaScript/jQuery Business Logic
 var results = [];
 var pingPong = function pingPong(inputNumber) {
-  debugger;
   for (var i = 1; i <= inputNumber; i++) {
     if (i % 15 === 0) {
       results.push("pinpong");
@@ -19,14 +18,18 @@ var pingPong = function pingPong(inputNumber) {
     return results;
 };
 
+
 // JavaScript/jQuery Front-End Logic
 $(document).ready(function() {
   $("form#converter").submit(function(event) {
     event.preventDefault();
     var inputNumber = parseInt($("input#input-number").val());
     pingPong(inputNumber);
+    results.forEach(function(result) {
+      // debugger;
+      $(".ouput-results").append("<li>" + result + "</li>");
+    });
     $(".output-message").text("The number " + inputNumber + " returns the following results: ");
-    $(".converted-number").html("<li>" + results + "</li>");
     $("#result").show();
     //add output
   });
