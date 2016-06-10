@@ -1,3 +1,11 @@
-#result {
+#result, .hide-first {
   display: none;
+}
+.top-images {
+  margin-top: 60px;
+}
+ul.output-results{
+  list-style-image: url('../img/ping-pong-ball.jpg');
+  font-size: 30px;
+  color: #5d5c5c;
 }

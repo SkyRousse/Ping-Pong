@@ -24,9 +24,10 @@ $(document).ready(function() {
   $("form#converter").submit(function(event) {
     event.preventDefault();
     $(".output-results li").remove();
+    $("img.hide-first").toggle();
+    $("img.show-first").toggle();
     var inputNumber = parseInt($("input#input-number").val());
     var pongResults = pingPong(inputNumber);
-
     pongResults.forEach(function(result) {
       $(".output-results").append("<li>" + result + "</li>");
       });
