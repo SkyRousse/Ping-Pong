@@ -17,8 +17,8 @@ Behavior  | Input Example | Output Example
 Restrict input to positive numbers only  | The13 (or) -1  | Alert: value must be greater than or equal to 1
 Returned numbers count up to provided number starting with 1| 2 | 1,2
 Returned numbers that are divisible by 3 are replaced with "ping"|6|1,2,ping,4,5,ping
-Returned numbers that are divisible by 5 are replaced with "pong"|10|1,2,ping,4,pong,ping,7,8,9,pong
-Returned numbers that are divisible by 5 are replaced with "pong"|15|1,2,ping,4,pong,ping,7,8,9,pong,11,ping,13,14,pingpong
+Returned numbers that are divisible by 5 are replaced with "pong"|10|1,2,ping,4,pong,ping,7,8,ping,pong
+Returned numbers that are divisible by 5 are replaced with "pong"|15|1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pingpong
 ## Setup/Installation Requirements
 
 * _Download from github: <a href="https://github.com/SkyRousse/Ping-Pong.git">https://github.com/SkyRousse/Ping-Pong.git</a>_

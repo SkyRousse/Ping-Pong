@@ -7,30 +7,24 @@ var rangeFinder = function rangeFinder(inputNumber) {
   return range;
 };
 
-var modFifteen = [];
-var modFive = [];
-var modThree = [];
-var numbers = [];
+var result = [];
 var pingPong = function pingPong(range) {
   debugger;
   for (var i = 1; i < range.length; i++) {
     if (range[i] % 15 === 0) {
-      modFifteen.push(i);
+      result.push("pinpong");
     }
     else if (range[i] % 5 === 0) {
-      modFive.push(i);
+      result.push("pong");
     }
     else if (range[i] % 3 === 0) {
-      modThree.push(i);
+      result.push("ping");
     }
     else  {
-      numbers.push(i);
+      result.push(i);
     }
   };
-    // return modFifteen;
-    // return modFive;
-    // return modThree;
-    // return numbers;
+    return result;
 };
 
 // JavaScript/jQuery Front-End Logic
