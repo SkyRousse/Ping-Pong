@@ -14,7 +14,7 @@ _This is a web application that takes a number from a user and returns a range o
 
 Behavior  | Input Example | Output Example
 ------------- | ------------- | -------------
-Restrict input to positive numbers only  | The13 (or) -1  | Alert: input field will only accept positive numbers
+Restrict input to positive numbers only  | The13 (or) -1  | Alert: value must be greater than or equal to 1
 Returned numbers count up to provided number starting with 1| 2 | 1,2
 Returned numbers that are divisible by 3 are replaced with "ping"|6|1,2,ping,4,5,ping
 Returned numbers that are divisible by 5 are replaced with "pong"|10|1,2,ping,4,pong,ping,7,8,9,pong

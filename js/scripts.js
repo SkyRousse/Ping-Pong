@@ -19,18 +19,13 @@ var converter = function convert(inputNumber) {
 $(document).ready(function() {
   $("form#converter").submit(function(event) {
     event.preventDefault();
-
     var inputNumber = $("input#input-number").val();
-
-    if (inputNumber <= 0 || inputNumber >= 4000) {
-      alert("number must a value between 1 and 3999");
-    }
-    // $(".converted-number")text("");
     //call function
 
     var roman = converter(inputNumber);
     // $("ul.converted-number li").remove();
-    $(".converted-number").append("<li>" + "The number " + inputNumber + " is equal to " + roman + "</li>");
+    $(".output-message").text("The number " + inputNumber + " returns the following results: ");
+    $(".converted-number").append();
     $("#result").show();
     //add output
   });
