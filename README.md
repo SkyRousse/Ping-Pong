@@ -23,6 +23,7 @@ Returned numbers that are divisible by 5 are replaced with "pong"|15|1,2,ping,4,
 
 * _Download from github: <a href="https://github.com/SkyRousse/Ping-Pong.git">https://github.com/SkyRousse/Ping-Pong.git</a>_
 * _Open in a web browser_
+* _Or visit site at: http://skyrousse.github.io/Ping-Pong/_
 
 
 ## Known Bugs
