@@ -2,7 +2,7 @@
 
 function Calculator(skinName) {
   this.skin = skinName;
-};
+}
 
 Calculator.prototype.pingPong = function pingPong(inputNumber) {
   var results = [];
@@ -19,7 +19,7 @@ Calculator.prototype.pingPong = function pingPong(inputNumber) {
     else  {
       results.push(i);
     }
-  };
+  }
     return results;
 };
 
