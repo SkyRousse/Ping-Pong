@@ -1,25 +1,6 @@
-// JavaScript/jQuery Business Logic
-
-var pingPong = function pingPong(inputNumber) {
-  var results = [];
-  for (var i = 1; i <= inputNumber; i++) {
-    if (i % 15 === 0) {
-      results.push("pinpong");
-    }
-    else if (i % 5 === 0) {
-      results.push("pong");
-    }
-    else if (i % 3 === 0) {
-      results.push("ping");
-    }
-    else  {
-      results.push(i);
-    }
-  };
-    return results;
-};
-
 // JavaScript/jQuery Front-End Logic
+var Calculator = require('./../js/pingpong.js').calculatorModule;
+
 $(document).ready(function() {
   $("form#converter").submit(function(event) {
     event.preventDefault();
@@ -27,7 +8,8 @@ $(document).ready(function() {
     $("img.hide-first").toggle();
     $("img.show-first").toggle();
     var inputNumber = parseInt($("input#input-number").val());
-    var pongResults = pingPong(inputNumber);
+    var simpleCalculator = new Calculator("hot pink");
+    var pongResults = simpleCalculator.pingPong(inputNumber);
     pongResults.forEach(function(result) {
       $(".output-results").append("<li>" + result + "</li>");
       });
