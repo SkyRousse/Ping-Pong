@@ -1,6 +1,6 @@
 # Ping Pong
 
-#### _Number generating web app, June 10, 2016_
+#### _Number generating web app_
 
 #### By _**Sky Rousse**_
 
@@ -26,9 +26,14 @@ Returned numbers that are evenly divisible by 15 are replaced with "pingpong"|15
 * _Or visit site at: http://skyrousse.github.io/Ping-Pong/_
 
 
-## Known Bugs
+## Update
 
-* _non at this time_
+Practice using npm and gulp tasks to to streamline your development process.
+Put your program's functions into their own module(s) using the exports keyword and use separate files for your front-end DOM manipulation logic. Your project should contain at least two JavaScript files.
+Include gulp tasks to concatenate, minify, browserify, and check your code with JSHint. Also remember to create a build task, and a clean task.
+Remember that we want the browser to load as few files as possible, and generated production files should be kept in a separate build folder.
+You are not intended to complete all of the possibilities on this page. It is recommended to do the Calculator exercise first, following along with the weekend homework, then proceed to the journal, and then if you have time pick either Memory or Simon.
+Feel free to expand on these problems to challenge yourself if you want, but only after you have the basics working. You must have at least 2 JavaScript files for each of these projects, including object declarations in the back-end file and using instances of these objects in your front-end file. You must also have a functioning gulpfile with all tasks described over the weekend homework, as well as all npm packages included in your manifest file.
 
 ## Support and contact details
 
